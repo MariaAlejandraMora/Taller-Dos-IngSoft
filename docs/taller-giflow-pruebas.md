@@ -3,14 +3,22 @@
 ## 1. Descripcion del Sistema
 
 ## 2. Requerimientos a Evaluar
+      
+### RF1-01 Registro de Estudiante
+El sistema debe permitir el registro de estudiantes cuya edad esté entre 16 y 65 años inclusive.
 
 ### RF-02 Código de Estudiante
 El código del estudiante 🤓 debe:
  - Tener exactamente 8 caracteres.
  - Iniciar con la letra “E”.
  - Los 7 caracteres restantes deben ser numéricos.
-      
+
 ## 3. Tecnicas de Prueba Aplicadas
+
+### RF1-01 Registro de Estudiante
+**Analisis de valor limite (BVA)**
+### Justificacion 
+Se utilizo esta tecnica porque sirve para probar una entrada con un rango numerico definido, lo cual es necesario en este requerimiento porque la entrada debe estar entre un rango de edad (16-65).
 
 ### RF-02 Código de Estudiante
 **Participación de equivalencia**
@@ -24,11 +32,20 @@ Se utiliza partición de equivalencia debido a que  el requerimiento define regl
 
 
 ## 4. Casos de Prueba Diseñados
+
+### RF1-01 Registro de Estudiante
+| Caso | Edad | Resultado |
+|------|--------|----------|
+| C1 | 66 | Invalido |
+| C2 | 17 | Valido |
+
 ### RF-02 Código de Estudiante
 | **Nombre**      | **Valores de entrada** | **Salida esperada**|
 |-----------------|-------------------|-----------------|
 | Código válido   | code: "E1234567"  | TRUE            |
 | Código inválido | code: "E12345A7"  | FALSE           |
+
+
 
 ## 5. Trazabilidad
 
