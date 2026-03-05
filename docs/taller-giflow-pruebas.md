@@ -19,4 +19,10 @@ Se utilizo esta tecnica porque sirve para probar una entrada con un rango numeri
 | C2 | 17 | Valido |
 ## 5. Trazabilidad
 
+| Requerimiento | Técnica Aplicada | Casos Asociados |
+|---------------|------------------|-----------------|
+| RF-01 | Valor límite | C1 (Caso invalido), C2 (Caso valido) |
+| RF-02 | Partición de equivalencia | Caso valido, Caso invalido  |
+| RF-03 | Tabla de decisión | CP01, CP02 |
+
 ## 6. Gestion de Versiones (GitFlow)
