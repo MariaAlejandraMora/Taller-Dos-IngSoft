@@ -25,13 +25,14 @@ Esta técnica permite analizar todas las combinaciones posibles de condiciones y
 |----------------------------------|--------------------------------------|----------------------------------|------------------------------|
 | Sí                               | Sí                                   | No                               | Sí                           |
 | No                               | Sí                                   | No                               | No                           |
-| Sí                               | No                                   | No                               | No                           |
-| Sí                               | Sí                                   | Sí                               | No                           |
-| No                               | No                                   | No                               | No                           |
-| No                               | Sí                                   | Sí                               | No                           |
-| Sí                               | No                                   | Sí                               | No                           |
-| No                               | No                                   | Sí                               | No                           |
+
 ## 4. Casos de Prueba Diseñados
+### RF-03 Inscripción a Evento
+
+| Nombre | Escenario | resultado |
+|------|------|------|
+| CP01 | El estudiante está registrado en el sistema. El evento tiene cupos disponibles. El estudiante no está previamente inscrito. |true|
+| CP02 | El estudiante NO está registrado. El evento tiene cupos disponibles. El estudiante no está previamente inscrito. |false|
 
 ## 5. Trazabilidad
 
