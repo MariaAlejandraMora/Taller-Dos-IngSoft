@@ -105,3 +105,19 @@ Cuando todas las funcionalidades estuvieron integradas y revisadas en develop, s
 ### Integración de cambios
 Durante la integración de las ramas hacia develop se presentaron algunos conflictos relacionados con el orden del contenido en el documento, ya que varios integrantes modificaron secciones similares al mismo tiempo. Estos conflictos se resolvieron revisando manualmente las diferencias entre las versiones y organizando correctamente el contenido para mantener la coherencia y estructura del documento final antes de confirmar el merge. 
 
+## 7. Reflexion Final
+**¿Qué técnica fue más compleja de identificar?**
+
+La técnica más compleja de identificar fue la tabla de decisión porque implica analizar múltiples condiciones al mismo tiempo y determinar todas las posibles combinaciones entre ellas. Esto requiere comprender bien las reglas del sistema y cómo cada condición afecta el resultado. En las otras técnicas como partición de equivalencia o análisis de valores límite, esta técnica exige un análisis más estructurado de las decisiones del sistema.
+
+**¿Qué diferencia notaron entre develop y main?**
+
+La rama `develop` se utiliza como un espacio de integración donde todos los miembros del equipo integran sus cambios y revisarlos antes de subirlos a la versión final. En cambio, la rama `main` representa la versión final del proyecto, una versión estable y controlada del sistema o documento. Según la gestión de configuraciones del software, mantener una línea base permite controlar los cambios sin afectar la estabilidad del producto final.
+
+**¿Qué pasaría si trabajaran directamente en main?**
+Si todos nosotros trabajáramos directamente en la rama `main`, sería más difícil controlar los cambios y podrían generarse muchos más conflictos o inconsistencias en el proyecto. Además, cualquier error afectaría directamente la versión estable del documento. La gestión de configuraciones busca precisamente evitar estas dificultades. 
+
+**¿Cómo ayuda GitFlow a controlar el cambio?**
+GitFlow ayuda a controlar el cambio al organizar el trabajo en diferentes ramas, permitiendo que los cambios se desarrollen y revisen antes de integrarse a la versión principal. De esta manera, se mantiene un registro claro de integrante realizó cada cambio, cuándo se hizo y qué elementos del proyecto se modificaron. Esto coincide con los objetivos de la Gestión de Configuración del Software, que busca identificar, controlar y registrar los cambios para garantizar la calidad y consistencia del sistema.
+
+
