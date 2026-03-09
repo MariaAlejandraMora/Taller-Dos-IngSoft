@@ -1,6 +1,7 @@
 # Documento de Pruebas
 
 ## 1. Descripcion del Sistema
+La plataforma de gestión de eventos universitarios permite a los estudiantes registrarse en el sistema, validar su código estudiantil e inscribirse a diferentes eventos organizados por la universidad. El sistema controla que los datos ingresados cumplan las siguientes  condiciones; como la edad permitida y el formato del código estudiantil. Además, verifica que los estudiantes estén registrados y que existan cupos disponibles antes de permitir la inscripción a un evento.
 
 ## 2. Requerimientos a Evaluar
     
@@ -83,3 +84,40 @@ Esta técnica permite analizar todas las combinaciones posibles de condiciones y
 | RF-03 | Tabla de decisión | CP01, CP02 |
 
 ## 6. Gestion de Versiones (GitFlow)
+Para la gestión del control de versiones se utilizó el modelo de ramas GitFlow, permitiéndonos organizar el desarrollo del proyecto de forma estructurada.
+
+### Ramas creadas
+Durante el desarrollo del taller se crearon las siguientes ramas:
+- main: rama principal del repositorio que contiene la versión final y estable del documento.
+- develop: rama utilizada para integrar los cambios realizados por los integrantes del equipo.
+- feature/rf01-registro-de-estudiante(edad): rama destinada al análisis y diseño de pruebas del requerimiento RF-01.
+- feature/rf02-codigo-de-estudiante: rama destinada al análisis y diseño de pruebas del requerimiento RF-02.
+- feature/rf03- inscripcion-evento: rama destinada al análisis y diseño de pruebas del requerimiento RF-03.
+- feature/trazabilidad: rama utilizada para construir la tabla de trazabilidad y revisar la coherencia del documento.
+- feature/integracion: rama encargada de elaborar la descripción del sistema, documentar la gestión de versiones con GitFlow y coordinar la integración final del documento antes del merge hacia la rama `develop`.
+
+### Flujo seguido
+Primero se creó la estructura base del documento en la rama main. Luego se creó la rama develop a partir de main.   Cada integrante del equipo creó su propia rama feature desde develop para trabajar de manera independiente en su parte del documento.
+Cuando ya se terminó el trabajo individual de cada rama feature, se realizó un Pull Request hacia develop para integrar los cambios.
+
+Cuando todas las funcionalidades estuvieron integradas y revisadas en develop, se realizó el Pull Request final desde develop hacia main para consolidar la versión final del documento.
+
+### Integración de cambios
+Durante la integración de las ramas hacia develop se presentaron algunos conflictos relacionados con el orden del contenido en el documento, ya que varios integrantes modificaron secciones similares al mismo tiempo. Estos conflictos se resolvieron revisando manualmente las diferencias entre las versiones y organizando correctamente el contenido para mantener la coherencia y estructura del documento final antes de confirmar el merge. 
+
+## 7. Reflexion Final
+**¿Qué técnica fue más compleja de identificar?**
+
+La técnica más compleja de identificar fue la tabla de decisión porque implica analizar múltiples condiciones al mismo tiempo y determinar todas las posibles combinaciones entre ellas. Esto requiere comprender bien las reglas del sistema y cómo cada condición afecta el resultado. En las otras técnicas como partición de equivalencia o análisis de valores límite, esta técnica exige un análisis más estructurado de las decisiones del sistema.
+
+**¿Qué diferencia notaron entre develop y main?**
+
+La rama `develop` se utiliza como un espacio de integración donde todos los miembros del equipo integran sus cambios y revisarlos antes de subirlos a la versión final. En cambio, la rama `main` representa la versión final del proyecto, una versión estable y controlada del sistema o documento. Según la gestión de configuraciones del software, mantener una línea base permite controlar los cambios sin afectar la estabilidad del producto final.
+
+**¿Qué pasaría si trabajaran directamente en main?**
+Si todos nosotros trabajáramos directamente en la rama `main`, sería más difícil controlar los cambios y podrían generarse muchos más conflictos o inconsistencias en el proyecto. Además, cualquier error afectaría directamente la versión estable del documento. La gestión de configuraciones busca precisamente evitar estas dificultades. 
+
+**¿Cómo ayuda GitFlow a controlar el cambio?**
+GitFlow ayuda a controlar el cambio al organizar el trabajo en diferentes ramas, permitiendo que los cambios se desarrollen y revisen antes de integrarse a la versión principal. De esta manera, se mantiene un registro claro de integrante realizó cada cambio, cuándo se hizo y qué elementos del proyecto se modificaron. Esto coincide con los objetivos de la Gestión de Configuración del Software, que busca identificar, controlar y registrar los cambios para garantizar la calidad y consistencia del sistema.
+
+
