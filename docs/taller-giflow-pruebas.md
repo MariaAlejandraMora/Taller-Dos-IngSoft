@@ -84,3 +84,24 @@ Esta técnica permite analizar todas las combinaciones posibles de condiciones y
 | RF-03 | Tabla de decisión | CP01, CP02 |
 
 ## 6. Gestion de Versiones (GitFlow)
+Para la gestión del control de versiones se utilizó el modelo de ramas GitFlow, permitiéndonos organizar el desarrollo del proyecto de forma estructurada.
+
+### Ramas creadas
+Durante el desarrollo del taller se crearon las siguientes ramas:
+- main: rama principal del repositorio que contiene la versión final y estable del documento.
+- develop: rama utilizada para integrar los cambios realizados por los integrantes del equipo.
+- feature/rf01-registro-de-estudiante(edad): rama destinada al análisis y diseño de pruebas del requerimiento RF-01.
+- feature/rf02-codigo-de-estudiante: rama destinada al análisis y diseño de pruebas del requerimiento RF-02.
+- feature/rf03- inscripcion-evento: rama destinada al análisis y diseño de pruebas del requerimiento RF-03.
+- feature/trazabilidad: rama utilizada para construir la tabla de trazabilidad y revisar la coherencia del documento.
+- feature/integracion: rama encargada de elaborar la descripción del sistema, documentar la gestión de versiones con GitFlow y coordinar la integración final del documento antes del merge hacia la rama `develop`.
+
+### Flujo seguido
+Primero se creó la estructura base del documento en la rama main. Luego se creó la rama develop a partir de main.   Cada integrante del equipo creó su propia rama feature desde develop para trabajar de manera independiente en su parte del documento.
+Cuando ya se terminó el trabajo individual de cada rama feature, se realizó un Pull Request hacia develop para integrar los cambios.
+
+Cuando todas las funcionalidades estuvieron integradas y revisadas en develop, se realizó el Pull Request final desde develop hacia main para consolidar la versión final del documento.
+
+### Integración de cambios
+Durante la integración de las ramas hacia develop se presentaron algunos conflictos relacionados con el orden del contenido en el documento, ya que varios integrantes modificaron secciones similares al mismo tiempo. Estos conflictos se resolvieron revisando manualmente las diferencias entre las versiones y organizando correctamente el contenido para mantener la coherencia y estructura del documento final antes de confirmar el merge. 
+
