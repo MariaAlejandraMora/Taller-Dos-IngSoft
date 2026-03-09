@@ -1,6 +1,7 @@
 # Documento de Pruebas
 
 ## 1. Descripcion del Sistema
+La plataforma de gestión de eventos universitarios permite a los estudiantes registrarse en el sistema, validar su código estudiantil e inscribirse a diferentes eventos organizados por la universidad. El sistema controla que los datos ingresados cumplan las siguientes  condiciones; como la edad permitida y el formato del código estudiantil. Además, verifica que los estudiantes estén registrados y que existan cupos disponibles antes de permitir la inscripción a un evento.
 
 ## 2. Requerimientos a Evaluar
     
